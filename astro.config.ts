@@ -38,7 +38,7 @@ import siteConfig from "./site.config";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://JustinotherGitter.github.io",
+	site: "https://vestaeterna.me",
 	trailingSlash: "never",
 	i18n: {
 		...siteConfig.i18n,
