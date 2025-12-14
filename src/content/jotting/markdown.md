@@ -6,6 +6,7 @@ tags: [Markup, Demo]
 description: Detailed guide to extended Markdown syntax features in the theme, including Ruby annotations, abbreviations, spoiler text, and other special markup syntax.
 ---
 
+<!-- markdownlint-disable MD033 -->
 <style>
 .red {
   color: #ef4444;
@@ -45,13 +46,13 @@ Out of personal usage habits, I added some plugins to implement syntax extension
 
 > Plugin: [`remark-ruby-directive`](https://github.com/brklntmhwk/remark-ruby-directive)
 
-```
+```markdown
 :ruby[拼音(pīn yīn)]
 ```
 
 :ruby[拼音(pīn yīn)]
 
-```
+```markdown
 :ruby[振り仮名（ふ　がな）]
 ```
 
@@ -61,7 +62,7 @@ Out of personal usage habits, I added some plugins to implement syntax extension
 
 > Self-implemented
 
-```
+```markdown
 !!Spoiler content!!
 ```
 
@@ -71,7 +72,7 @@ Out of personal usage habits, I added some plugins to implement syntax extension
 
 > Plugin: [`remark-gemoji`](https://github.com/remarkjs/remark-gemoji)
 
-```
+```markdown
 :wink: :cry: :laughing: :yum:
 ```
 
@@ -83,13 +84,13 @@ Out of personal usage habits, I added some plugins to implement syntax extension
 
 > Plugin: [`remark-math` & `rehype-katex`](https://github.com/remarkjs/remark-math)
 
-```
+```markdown
 $e^{ix} = \cos x + i \sin x$
 ```
 
 $e^{ix} = \cos x + i \sin x$
 
-```
+```markdown
 $$
 (f*g)(t)=\int f(\tau)g(t-\tau)d\tau
 $$
@@ -103,7 +104,7 @@ $$
 
 > Plugin: [`remark-footnotes-extra`](https://github.com/miaobuao/remark-footnotes-extra)
 
-```
+```markdown
 Footnote[^1]
 [^1]: Footnote **can have markup**.
 ```
@@ -111,7 +112,7 @@ Footnote[^1]
 Footnote[^1]
 [^1]: Footnote **can have markup**.
 
-```
+```markdown
 Inline Footnote^[Inline information]
 ```
 
@@ -121,7 +122,7 @@ Inline Footnote^[Inline information]
 
 > Self-implemented
 
-```
+```markdown
 ABBR abbr xABBRx
 
 *[ABBR]: Abbreviation
@@ -135,7 +136,7 @@ ABBR abbr xABBRx
 
 > Plugin: [remark-github-blockquote-alert](https://github.com/jaywcjlove/remark-github-blockquote-alert)
 
-```
+```markdown
 > [!NOTE]
 > General information
 ```
@@ -143,7 +144,7 @@ ABBR abbr xABBRx
 > [!NOTE]
 > General information
 
-```
+```markdown
 > [!TIP]
 > Optional information
 ```
@@ -151,7 +152,7 @@ ABBR abbr xABBRx
 > [!TIP]
 > Optional information
 
-```
+```markdown
 > [!IMPORTANT]
 > Important information
 ```
@@ -159,7 +160,7 @@ ABBR abbr xABBRx
 > [!IMPORTANT]
 > Important information
 
-```
+```markdown
 > [!WARNING]
 > Risk information
 ```
@@ -167,7 +168,7 @@ ABBR abbr xABBRx
 > [!WARNING]
 > Risk information
 
-```
+```markdown
 > [!CAUTION]
 > Warning information
 ```
@@ -175,7 +176,7 @@ ABBR abbr xABBRx
 > [!CAUTION]
 > Warning information
 
-```
+```markdown
 > [!NOTE/(･ρ･)ﾉ]
 > Custom title text
 ```
@@ -187,47 +188,47 @@ ABBR abbr xABBRx
 
 > Plugin: [remark-extended-table](https://github.com/wataru-chocola/remark-extended-table)
 
-```
-| Left Align  | Center | Right Align |    Center     |
-|:----------- |:------:| -----------:| ------------- |
-| Normal Cell |     Merged Cell     || Merged Column |
-| Normal Cell |      2×2 Cell       ||       ^       |
-| Normal Cell |          ^          ||  Normal Cell  |
+```markdown
+| Left Align  |   Center    | Right Align | Center        |
+| :---------- | :---------: | ----------: | ------------- |
+| Normal Cell | Merged Cell |             | Merged Column |
+| Normal Cell |  2×2 Cell   |             | ^             |
+| Normal Cell |      ^      |             | Normal Cell   |
 ```
 
-| Left Align | Center | Right Align | Center |
-|:- |:-:| -:| - |
-| Normal Cell | Merged Cell || Merged Column |
-| Normal Cell | 2×2 Cell ||^|
-| Normal Cell | ^ || Normal Cell |
+| Left Align  |   Center    | Right Align | Center        |
+| :---------- | :---------: | ----------: | ------------- |
+| Normal Cell | Merged Cell |             | Merged Column |
+| Normal Cell |  2×2 Cell   |             | ^             |
+| Normal Cell |      ^      |             | Normal Cell   |
 
 ## Inline Element Attributes Extension {#custom-id}
 
 > Self-implemented
 
-```
+```markdown
 ## Inline Element Attributes Extension {#custom-id}
 ```
 
-```
-![](https://picsum.photos/1600/900?random=1){width=300}
+```markdown
+![Alt text](https://picsum.photos/1600/900?random=1 "on-hover text"){width=300}
 ```
 
-![](https://picsum.photos/1600/900?random=1){width=300}
+![An example of an embedded image](https://picsum.photos/1600/900?random=1 "You found an easter egg!"){width=300}
 
-```
+```markdown
 **Important**{.colorful} content
 ```
 
 **Important**{.colorful} content
 
-```
+```markdown
 *Multiple*{.red .big} classes
 ```
 
 *Multiple*{.red .big} classes
 
-```
+```markdown
 **Custom attributes**{key="This is a value"}
 ```
 

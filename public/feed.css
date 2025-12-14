@@ -9,9 +9,9 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--primary-color: #dddddb;
+		--primary-color: #faf4d3;
 		--remark-color: #a5a5a5;
-		--background-color: #020200;
+		--background-color: #0c1618;
 		--block-color: #1e1e1e;
 		--shadow-color: #323231;
 		--selection-color: #adadacc3;

@@ -1,0 +1,63 @@
+import Linkroll from "$components/Linkroll.astro";
+
+export const resource_links = [
+	{
+		title: "Obsidian",
+		url: "https://obsidian.md/",
+		image: "https://obsidian.md/favicon.svg",
+		description: "Markdown-based note-taking to organize anything.",
+		type: "resources"
+	},
+	{
+		title: "Typst",
+		url: "https://typst.app/",
+		image: "https://typst.app/favicon.ico",
+		description: "Typesetting dragged into the 21st century.",
+		type: "resources"
+	},
+	{
+		title: "Diátaxis Framework",
+		url: "https://diataxis.fr/",
+		image: "https://diataxis.fr/_static/favicon.png",
+		description: "A systematic approach to technical documentation authoring.",
+		type: "resources"
+	},
+	{
+		title: "Arxiv",
+		url: "https://arxiv.org/",
+		image: "https://arxiv.org/static/browse/0.3.4/images/icons/apple-touch-icon.png",
+		description: "Open access to academic papers across various fields.",
+		type: "resources"
+	},
+	{
+		title: "NASA ADS",
+		url: "https://ui.adsabs.harvard.edu/",
+		image: "https://ui.adsabs.harvard.edu/apple-touch-icon.png",
+		description: "Digital library for physics and astronomy research.",
+		type: "resources"
+	},
+];
+
+export const fun_links = [
+	{
+		title: "Wait But Why",
+		url: "https://waitbutwhy.com/",
+		image: "https://waitbutwhy.com/wp-content/themes/waitbutwhy/images/favicon.ico",
+		description: "Thought-provoking long-form articles.",
+		type: "fun"
+	},
+];
+
+
+I can't believe you're reading this!
+If you made it this far you've probably read all of my content. 
+Here are some external sites that I think will deepen this rabbit hole you're so intent on following:
+
+<Linkroll locale={props.locale} links={resource_links} />
+
+A second linkroll?
+
+<Linkroll locale={props.locale} links={fun_links} />
+
+If you're back here after those, welcome back!
+You obviously have something in mind, so why not [reach out](mailto:Justin.jb78+vesta.aeterna@gmail.com?subject=Vesta%20Inquiry)?

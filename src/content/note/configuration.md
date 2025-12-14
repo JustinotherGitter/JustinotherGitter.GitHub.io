@@ -12,8 +12,8 @@ description: Essential configuration guide for Astro theme sites, covering envir
     cp .env.example .env
     ```
 2. Modify or add variables:
-    | Variable | Description |
-    | - | - |
+    | Variable           | Description                                                                                                           |
+    | ------------------ | --------------------------------------------------------------------------------------------------------------------- |
     | `PUBLIC_TIMEZONE`* | Default display timezone, refer to [Timezone List](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) |
 
     `*` indicates required options.
